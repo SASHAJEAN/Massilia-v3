@@ -10,8 +10,8 @@ LOGO_B64    = (_dir / "logo.b64").read_text().strip()
 PATTERN_B64 = (_dir / "pattern.b64").read_text().strip()
 
 st.set_page_config(
-    page_title="Massilia 🌊",
-    page_icon="🥃",
+    page_title="Massilia ",
+    page_icon="",
     layout="wide",
     initial_sidebar_state="collapsed",
 )
@@ -341,15 +341,15 @@ st.markdown(f"""
 # ── STAT BAR ──────────────────────────────────────────────────────────────────
 st.markdown(f"""
 <div class="stat-bar">
-  <div class="stat-chip">🥃 Pastis <span class="chip-val">from €1.50</span></div>
-  <div class="stat-chip">🍟 Panisse <span class="chip-val">from €2.00</span></div>
-  <div class="stat-chip">📍 Spots <span class="chip-val">{len(SPOTS)} verified</span></div>
-  <div class="stat-chip">👥 Reviews <span class="chip-val">{len(st.session_state.comments)} locals</span></div>
+  <div class="stat-chip">Pastis <span class="chip-val">from €1.50</span></div>
+  <div class="stat-chip">Panisse <span class="chip-val">from €2.00</span></div>
+  <div class="stat-chip">Spots <span class="chip-val">{len(SPOTS)} verified</span></div>
+  <div class="stat-chip">Reviews <span class="chip-val">{len(st.session_state.comments)} locals</span></div>
 </div>
 """, unsafe_allow_html=True)
 
 # ── TABS ──────────────────────────────────────────────────────────────────────
-tab1, tab2, tab3 = st.tabs(["🗺️  Map & Spots", "👥  Community", "🎁  Deals"])
+tab1, tab2, tab3 = st.tabs(["Map & Spots", "Community", "Deals"])
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # TAB 1 — MAP + PREFERENCES SIDE BY SIDE
